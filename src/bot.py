@@ -16,6 +16,7 @@ logging.basicConfig(level=logging.INFO)
 # вызывать метод get_secret_value(),
 # чтобы получить настоящее содержимое вместо '*******'
 bot = Bot(token=config.bot_token.get_secret_value())
+
 # Диспетчер
 dp = Dispatcher()
 
@@ -40,4 +41,3 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-
